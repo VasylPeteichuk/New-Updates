@@ -1,0 +1,227 @@
+.ccw-container {
+      max-width: 520px;
+      margin: 0 auto;
+      font-family: Arial, sans-serif;
+      color: #fff;
+    }
+    .ccw-title {
+      font-weight: 700;
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+    .ccw-form, .ccw-auth-form {
+      background: #00000000;
+      padding: 20px;
+        box-shadow: 0px 0px 100px 20px rgba(0, 0, 0, 0.490);
+      margin-bottom: 10px;
+    }
+    .ccw-auth-form h3{
+        color: #fff;
+    }
+    .ccw-comment-text{
+        color: #fff;
+    }
+    .ccw-input, .ccw-textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 16px;
+      border: none;
+      font-size: 15px;
+      resize: vertical;
+      box-sizing: border-box;
+      border-radius: 0;
+      outline: none;
+      background-color: #00000000;
+      color: #fff;
+    }
+    .ccw-btn-submit {
+      background-color: #00000000;
+      border: none;
+      color: white;
+      font-weight: 700;
+      font-size: 16px;
+      padding: 12px;
+      width: 100%;
+      cursor: pointer;
+      border-radius: 30px;
+      border: 1px solid #fff;
+      transition: background-color 0.3s ease;
+    }
+    .ccw-btn-submit:hover:not(:disabled) {
+      background-color: #372a08;
+      border: 1px solid #372a08;
+    }
+    .ccw-btn-submit:disabled {
+      background-color: #fff;
+      cursor: not-allowed;
+    }
+    .ccw-comments-list {
+      max-width: 600px;
+    }
+    .ccw-comment {
+      color: #fff;
+      background: #00000000;
+      padding: 16px;
+      border-radius: 0;
+      margin-bottom: 10px;
+      box-shadow: 0px 0px 100px 20px rgba(0, 0, 0, 0.490);
+      position: relative;
+      max-width: 100%;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      box-sizing: border-box;
+      border: 2px solid transparent;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    /* Видалено стиль підсвітки користувацького коментаря */
+    /*
+    .ccw-comment.user-comment {
+      border-color: #956a24;
+      box-shadow: 0 0 8px rgba(149, 106, 36, 0.7);
+      background-color: #fff8e1;
+    }
+    */
+    .ccw-comment-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      flex-wrap: nowrap;
+      gap: 10px;
+    }
+    .ccw-comment-author {
+      font-weight: 700;
+      font-size: 18px;
+      white-space: nowrap;
+      color: #fff;
+    }
+    .ccw-comment-date {
+      font-size: 12px;
+      color: #fff;
+      font-weight: 400;
+      white-space: nowrap;
+    }
+    .ccw-comment-buttons {
+      display: flex;
+      gap: 14px;
+      flex-shrink: 0;
+    }
+    .ccw-comment-buttons button {
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 14px;
+      cursor: pointer;
+      font-weight: 600;
+      padding: 2px 6px;
+      border-radius: 2px;
+      transition: color 0.3s ease, background-color 0.3s ease;
+    }
+    .ccw-comment-buttons button:hover {
+        transition: 0.3s;
+        color: #372a08;
+    }
+    .ccw-edit-textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 15px;
+      border: 2px solid #00000000;
+      border-radius: 0;
+      background-color: #00000000;
+      resize: vertical;
+      box-sizing: border-box;
+      color: #fff;
+    }
+    .ccw-edit-actions {
+      text-align: right;
+      margin-top: 8px;
+    }
+    .ccw-edit-actions button {
+    outline: none;
+    border: none;
+    color: #000;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    background: #00000000;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s all;
+    background-color: #00000000;
+    }
+    .ccw-edit-actions button:hover:not(:disabled) {
+      background-color: #372a08;
+      border: 1px solid #00000000;
+      color: #fff;
+    }
+    .ccw-edit-actions .ccw-cancel-btn {
+      background-color: #00000000;
+      border: 1px solid #fff;
+    }
+    .auth-info {
+      margin-bottom: 20px;
+      font-size: 16px;
+      color: #444;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logout-btn {
+    outline: none;
+    border: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    background: #00000000;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s all;
+    }
+    .logout-btn:hover {
+        border: 1px solid #372a08;
+        transition: 0.3s;
+        background-color: #372a08;
+    }
+
+    html{
+    scroll-behavior: smooth;
+}
+body{
+  user-select: none;
+  position: relative;
+  max-width: 100%;
+  background-image: linear-gradient(100deg, #191919 0%, #121212 45%, #0e0e0e);
+  background-image: url(../images/mrachny.webp);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+*{
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #000;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #0e0e0e;
+}
+::-webkit-scrollbar-track{
+    background-color: #303030;
+}
+
+
+.logotype{
+    margin-top: 7%;
+    margin-bottom: 5%;
+    text-align: center;
+    font-size: 20px;
+}
+.logotype a{
+font-size: 20px;
+color: #fff;
+}
